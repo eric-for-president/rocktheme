@@ -47,7 +47,7 @@
 /*  Google Fonts
 /*----------------------------------------*/
 
-@import url('../../css2-1');
+@import url('../../css2');
 
 
 /*----------------------------------------*/
@@ -394,7 +394,7 @@ div#preloader {
 	width: 100%;
 	height: 100%;
 	overflow: visible;
-	background: #151049 url('img/logo/preloader-1.gif') no-repeat center center;
+	background: #151049 url('img/logo/preloader.gif') no-repeat center center;
 }
 
 /*----------------------------------------*/
@@ -493,7 +493,7 @@ div#preloader {
     height: 100%;
 }
 .header-logo::after {
-    background: url(img/background/logo-bg-1.png);
+    background: url(img/background/logo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -681,7 +681,7 @@ div#preloader {
 }
 .bg-wrapper::after{
     position: absolute;
-    background:url(img/background/bg1-1.png);
+    background:url(img/background/bg1.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; 
@@ -729,7 +729,7 @@ div#preloader {
 }
 .layer-1::after {
     position: absolute;
-    background: url(img/about/icon1-1.png);
+    background: url(img/about/icon1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -816,7 +816,7 @@ div#preloader {
     border:1px solid #483881;
 }
 .wel-content::after{
-    background:url(img/background/wel1-1.png);
+    background:url(img/background/wel1.png);
     background-repeat: no-repeat;
     background-position:top center;
     background-size: cover;
@@ -909,7 +909,7 @@ div#preloader {
     z-index: 4;
     text-align: center;
     padding:24px 20px;
-    background:url(img/background/fly-1.png);
+    background:url(img/background/fly.png);
     background-repeat: no-repeat;
     background-position:left top;
     background-size: cover;
@@ -986,7 +986,7 @@ div#preloader {
 /*  6. Services Area
 /*----------------------------------------*/
 .service-area{
-    background:url(img/background/bg6-1.jpg);
+    background:url(img/background/bg6.jpg);
     background-repeat: no-repeat;
     background-position:center center;
     background-size: cover;
@@ -1202,7 +1202,7 @@ div#preloader {
 /* 8.Feature Area
 /*--------------------------------*/
 .feature-area {
-    background:url(img/background/bg6-1.jpg);
+    background:url(img/background/bg6.jpg);
     background-repeat: no-repeat;
     background-position:center center;
     background-size: cover;
@@ -1636,7 +1636,7 @@ div#preloader {
 /*----------------------------------------*/
 .footer-area{
    position: relative;
-    background:url(img/background/sub-1.jpg);
+    background:url(img/background/sub.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 5;
@@ -1660,7 +1660,7 @@ div#preloader {
     border-radius: 4px;
 }
 .footer-center{
-    background:url(img/background/footer-1.png);
+    background:url(img/background/footer.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1878,7 +1878,7 @@ div#preloader {
 }
 .intro-area-3 .bg-wrapper::after{
     position: absolute;
-    background:url(img/background/bg3-1.png);
+    background:url(img/background/bg3.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; 
@@ -1906,7 +1906,7 @@ div#preloader {
     background: transparent;
 }
 .page-area {
-    background: url(img/background/bread-1.jpg);
+    background: url(/static/website/img/background/bread.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -1921,13 +1921,13 @@ div#preloader {
     top: 0;
     width:100%;
     height: 100%;
-    background: url(img/background/bread-1.png);
+    background: url(/static/website/img/background/bread.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
     z-index: -1;
     opacity: 0.80;
-}
+}    
 .breadcrumb {
     padding: 0;
     margin-bottom: 0;

@@ -1,5 +1,5 @@
 <!doctype html>
-{% laod static %}
+{% load static %}
 <html class="no-js" lang="zxx">
 
 <head>
@@ -49,6 +49,7 @@
     <!-- Mouse Cursor -->
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"><span></span></div>
+    
     <!-- Start header -->
     <header class="header-one">
         <div id="sticker" class=" header-area">
@@ -77,7 +78,7 @@
                         <div class="header_menu t-center">
                             <nav id="mobile-menu">
                                 <ul class="main-menu">
-                                    <li ><a href="#">Home</a>
+                                    <li ><a href="{% url 'index' %}">Home</a>
                                         {% comment %} <ul class="submenu">
                                             <li><a href=" {% static 'website/index.html' %} ">Home 0ne</a></li>
                                             <li><a href=" {% static 'website/index-2.html' %} ">Home Two</a></li>
@@ -85,29 +86,30 @@
                                         </ul> {% endcomment %}
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href=" {% static 'website/about.html' %} ">About</a></li>
-                                            <li><a href=" {% static 'website/services.html' %} ">Services</a></li>
-                                            <li><a href=" {% static 'website/service-details.html' %} ">Services Details</a></li>
-                                            <li><a href=" {% static 'website/team.html' %} ">Teams</a></li>
-                                            <li><a href=" {% static 'website/review.html' %} ">Reviews</a></li>
-                                            <li><a href=" {% static 'website/pricing.html' %} ">Pricing</a></li>
-                                            <li><a href=" {% static 'website/error.html' %} ">Error</a></li>
-                                        </ul>
+                                       <ul class="submenu">
+                                        <li><a href="{% url 'about' %}">About</a></li>
+                                        <li><a href="{% url 'services' %}">Services</a></li>
+                                        <li><a href="{% url 'service_details' %}">Service Details</a></li>
+                                        <li><a href="{% url 'team' %}">Teams</a></li>
+                                        <li><a href="{% url 'review' %}">Reviews</a></li>
+                                        <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                        <li><a href="{% url 'error' %}">Error</a></li>
+                                    </ul>
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Projects</a>
                                         <ul class="submenu">
-                                            <li><a href=" {% static 'website/project.html' %} ">Projects</a></li>
-                                            <li><a href=" {% static 'website/project-details.html' %} ">Project Details</a></li>
+                                            <li><a href="{% url 'project' %}">Project</a></li>
+                                            <li><a href="{% url 'project_details' %}">Project Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Blog</a>
                                         <ul class="submenu">
-                                            <li><a href=" {% static 'website/blog.html' %} ">Blog Grid</a></li>
-                                            <li><a href=" {% static 'website/blog-details.html' %} ">Blog Details</a></li>
+                                            <li><a href="{% url 'blog' %}">Blog</a></li>
+                                             <li><a href="{% url 'blog_details' %}">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li class="contact"><a href=" {% static 'website/contact.html' %} ">Contact</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                     <li><a href="{% url 'notes' %}">Notes</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -120,9 +122,10 @@
         </div>
     </header>
     <!-- End header area -->
+    
     <main>
         <!-- Start Breadcrumb Area -->
-        <div class="page-area area-120">
+        <div class="page-area area-120" >
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 justify-content-start align-items-center">
