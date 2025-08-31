@@ -1,5 +1,5 @@
 <!doctype html>
- {% load static %} 
+{% laod static %}
 <html class="no-js" lang="zxx">
 
 <head>
@@ -77,12 +77,12 @@
                         <div class="header_menu t-center">
                             <nav id="mobile-menu">
                                 <ul class="main-menu">
-                                    <li class="menu-item-has-children"><a href="#">Home</a>
-                                        <ul class="submenu">
+                                    <li ><a href="#">Home</a>
+                                        {% comment %} <ul class="submenu">
                                             <li><a href=" {% static 'website/index.html' %} ">Home 0ne</a></li>
                                             <li><a href=" {% static 'website/index-2.html' %} ">Home Two</a></li>
                                             <li><a href=" {% static 'website/index-3.html' %} ">Home Three</a></li>
-                                        </ul>
+                                        </ul> {% endcomment %}
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Pages</a>
                                         <ul class="submenu">
@@ -400,7 +400,7 @@
     <!-- owl.carousel js -->
     <script src=" {% static 'website/js/owl.carousel.min.js' %} "></script>
     <script src=" {% static 'website/js/slick.min.js' %} "></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBceNl50o3BU6LrsIGJxSL9tKKvqBKIeVs"></script>
+    <script src=""></script>
     <script src=" {% static 'website/js/mapcode.js' %} "></script>
     <!-- meanmenu js -->
     <script src=" {% static 'website/js/jquery.meanmenu.js' %} "></script>
