@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<!-- Mirrored from www.codewithharry.com/notes by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Aug 2025 07:07:30 GMT -->
+<!-- Added by HTTrack -->
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Notes - Code With Harry - Pink Theme</title>
+    <style>
+        body {
+            background: #ffe4f7 !important;
+            color: #d1006f !important;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background: #ffb6e6 !important;
+            color: #d1006f !important;
+            border-bottom: 2px solid #ff69b4 !important;
+        }
+
+        a {
+            color: #d1006f !important;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff69b4 !important;
+            background: #ffe4f7 !important;
+        }
+
+        .card,
+        .content,
+        .main {
+            background: #fff0fa !important;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #ffb6e6;
+            color: #d1006f !important;
+            padding: 1em;
+        }
+
+        button,
+        .btn {
+            background: #ff69b4 !important;
+            color: #fff !important;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover,
+        .btn:hover {
+            background: #d1006f !important;
+            color: #ffe4f7 !important;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(90deg, #ffb6e6 0%, #ffe4f7 100%) !important;
+        }
+
+        body,
+        html {
+            background: #ffe4f7 !important;
+            color: #d1006f !important;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        * {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .bg-background,
+        .bg-card,
+        .bg-zinc-50,
+        .bg-white,
+        .bg-gray-50,
+        .min-h-screen,
+        .container,
+        .main,
+        .card,
+        .content,
+        .antialiased {
+            background: #ffe4f7 !important;
+            color: #d1006f !important;
+        }
+
+        .text-foreground,
+        .text-gray-800,
+        .text-gray-900,
+        .text-gray-700,
+        .text-zinc-900,
+        .text-zinc-600,
+        .text-zinc-400,
+        .dark\:text-white {
+            color: #d1006f !important;
+        }
+
+        a {
+            color: #d1006f !important;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff69b4 !important;
+            background: #ffe4f7 !important;
+        }
+
+        header,
+        footer {
+            background: #ffb6e6 !important;
+            color: #d1006f !important;
+            border-bottom: 2px solid #ff69b4 !important;
+        }
+
+        button,
+        .btn {
+            background: #ff69b4 !important;
+            color: #fff !important;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover,
+        .btn:hover {
+            background: #d1006f !important;
+            color: #ffe4f7 !important;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(90deg, #ffb6e6 0%, #ffe4f7 100%) !important;
+        }
+
+        body,
+        html {
+            background: #ffe4f7 !important;
+            color: #d1006f !important;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        * {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .bg-background,
+        .bg-card,
+        .bg-zinc-50,
+        .bg-white,
+        .bg-gray-50,
+        .min-h-screen,
+        .container,
+        .main,
+        .card,
+        .content,
+        .antialiased {
+            background: #ffe4f7 !important;
+            color: #d1006f !important;
+        }
+
+        .text-foreground,
+        .text-gray-800,
+        .text-gray-900,
+        .text-gray-700,
+        .text-zinc-900,
+        .text-zinc-600,
+        .text-zinc-400,
+        .dark\:text-white {
+            color: #d1006f !important;
+        }
+
+        a {
+            color: #d1006f !important;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ff69b4 !important;
+            background: #ffe4f7 !important;
+        }
+
+        header,
+        footer {
+            background: #ffb6e6 !important;
+            color: #d1006f !important;
+            border-bottom: 2px solid #ff69b4 !important;
+        }
+
+        button,
+        .btn {
+            background: #ff69b4 !important;
+            color: #fff !important;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover,
+        .btn:hover {
+            background: #d1006f !important;
+            color: #ffe4f7 !important;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(90deg, #ffb6e6 0%, #ffe4f7 100%) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+    </header>
+    <main class="main card content">
+        <h2>Bright Beautiful Pink Theme</h2>
+        <p>This notes page now uses a vibrant pink theme!</p>
+        <a href=" {% static 'website/index.html' %} ">Home</a> |
+        <a href=" {% static 'website/blog.html' %} ">Blog</a> |
+        <a href=" {% static 'website/tutorials.html' %} ">Tutorials</a> |
+        <a href=" {% static 'website/gear.html' %} ">Gear</a>
+        <br><br>
+        <button class="btn">Try Me!</button>
+    </main>
+    <footer>
+        &copy; 2025 Code With Harry. All rights reserved.
+    </footer>
+</body>
+
+</html>
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/js.webp' %} " />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/cpp.webp' %} " />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/flask.webp' %} " />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/php.webp' %} " />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/mysql.webp' %} " />
+    <link rel="preload" as="image" href=" {% static 'website/img/notes/django.webp' %} " />
+    <link rel="stylesheet" href=" {% static 'website/_next/static/css/30e9f8676ad9dabe.css' %} " data-precedence="next" />
+    <link rel="stylesheet" href=" {% static 'website/_next/static/css/53eef233cdc30247.css' %} " data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low" href=" {% static 'website/_next/static/chunks/webpack-1f8e0a8e3d9c8665.js' %} " />
+    <script src=" {% static 'website/_next/static/chunks/eabca39a-7d6377d76d0bae7a.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/649-dc8149436b9b3965.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/main-app-60c86469bf52faf3.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/3868-d32f28fdc463b233.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/9767-84cd7b7a924ca45f.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/1303-202330d7b8075350.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/3263-11710914f9985149.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/529-2cffe6655b674629.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/9881-7bd56b138ca162a8.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/9671-352cbd3f13a06200.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/7552-299c8347df13ec6b.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/4604-e4d7c8c182986b80.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/app/layout-09dda55155b40063.js' %} " async=""></script>
+    <script src=" {% static 'website/_next/static/chunks/app/(footerpages)/notes/page-ddb7f0d55a9055b5.js' %} " async=""></script>
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-TLJ82JF418" as="script" />
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=AW-11344294909" as="script" />
+    <link rel="shortcut icon" href=" {% static 'website/favicon.ico' %} " type="image/x-icon" />
+    <meta name="next-size-adjust" content="" />
+    <title>Download Notes &amp; Cheatsheets | CodeWithHarry</title>
+    <meta name="description"
+        content="Download free programming notes, cheatsheets, and handbooks for Python, Java, C, HTML, CSS, JavaScript and more to enhance your coding skills." />
+    <meta name="keywords"
+        content="programming notes, coding cheatsheets, programming handbooks, free coding resources, learn programming, Python notes, Java notes, HTML notes, CSS notes, JavaScript notes" />
+    <meta name="creator" content="Harry" />
+    <meta name="publisher" content="CodeWithHarry" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Download Notes &amp; Cheatsheets | CodeWithHarry" />
+    <meta property="og:description"
+        content="Download free programming notes, cheatsheets, and handbooks for Python, Java, C, HTML, CSS, JavaScript and more to enhance your coding skills." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodeWithHarry - Learn Programming and Coding" />
+    <meta name="twitter:description"
+        content="Learn programming with easy-to-follow tutorials, courses, and resources. CodeWithHarry offers free content for beginners and advanced developers." />
+    <link rel="icon" href=" {% static 'website/favicon.ico' %} " type="image/x-icon" sizes="16x16" /><noscript><img height="1" width="1"
+            style="display:none" src="https://www.facebook.com/tr?id=608037172208445&amp;ev=PageView&amp;noscript=1"
+            alt="Facebook Pixel" /></noscript>
+    <script src=" {% static 'website/_next/static/chunks/polyfills-42372ed130431b0a.js' %} " noModule=""></script>
+</head>
+
+<body class="__variable_1e4310 __variable_c3aa02 __variable_9b9fd1 antialiased">
+    <div hidden=""><!--$--><!--/$--></div>
+    <div id="_rht_toaster"
+        style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+    <script>((a, b, c, d, e, f, g, h) => { let i = document.documentElement, j = ["light", "dark"]; function k(b) { var c; (Array.isArray(a) ? a : [a]).forEach(a => { let c = "class" === a, d = c && f ? e.map(a => f[a] || a) : e; c ? (i.classList.remove(...d), i.classList.add(b)) : i.setAttribute(a, b) }), c = b, h && j.includes(c) && (i.style.colorScheme = c) } if (d) k(d); else try { let a = localStorage.getItem(b) || c, d = g && "system" === a ? window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" : a; k(d) } catch (a) { } })("class", "theme", "system", null, ["light", "dark"], null, true, true)</script>
+    <div class="" style="position:fixed;top:0;left:0;height:2px;background:transparent;z-index:99999999999;width:100%">
+        <div class="" style="height:100%;background:red;transition:all 500ms ease;width:0%">
+            <div
+                style="box-shadow:0 0 10px red, 0 0 10px red;width:5%;opacity:1;position:absolute;height:100%;transition:all 500ms ease;transform:rotate(2deg) translate(0px, -2px);left:-10rem">
+            </div>
+        </div>
+    </div>
+    <header class="bg-background text-foreground p-2 md:p-4 sticky top-0 z-20 border-b-2">
+        <div class="md:mx-4 flex justify-between">
+            <div class="flex flex-col justify-center">
+                <div class="flex mb-2 items-center"><a class="md:text-2xl font-bold flex items-center"
+                        href=" {% static 'website/index.html' %} "><span class="flex md:text-xl font-poppins dark:text-white text-gray-800"><span
+                                class="font-semibold">&lt;/&gt;</span> <span
+                                class="font-bold">CodeWithHarry</span></span></a>
+                    <ul class="justify-center items-center gap-2 mx-2 hidden xl:flex">
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/index.html' %} ">Home</a></li>
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/courses.html' %} ">Courses</a></li>
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/tutorials.html' %} ">Tutorials</a></li>
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/blog.html' %} ">Blog</a></li>
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/notes.html' %} ">Notes</a></li>
+                        <li><a class="hover:bg-slate-100 dark:hover:bg-zinc-900 px-4 py-2 duration-300 rounded-3xl"
+                                href=" {% static 'website/contact.html' %} ">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex md:gap-4 justify-center items-center">
+                <div class="relative hidden md:flex items-center"><input
+                        class="px-4 pr-10 text-xs py-2 rounded-md bg-zinc-100 dark:bg-zinc-800 w-60 mx-0 outline-none focus:ring-0 focus:border-none"
+                        type="text" placeholder="Search..." readOnly="" /><span
+                        class="absolute right-2 px-2 py-1 text-xs text-foreground bg-zinc-100 dark:bg-zinc-950 rounded-md border border-zinc-300 dark:border-zinc-700 flex items-center gap-1"><kbd
+                            class="font-mono text-xs">⌘</kbd><kbd class="font-mono text-xs">K</kbd></span></div><button
+                    class="md:hidden px-2 py-1 flex justify-center items-center mx-2 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-search size-6">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg></button>
+                <div class="hidden xl:flex gap-2"><a
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+                        href=" {% static 'website/login67a3.html?redirectUrl=%2F' %} ">Login</a><a
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+                        href=" {% static 'website/signup67a3.html?redirectUrl=%2F' %} ">Signup</a><button
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background text-foreground shadow-sm hover:bg-accent hover:text-accent-foreground h-9 w-9"
+                        aria-label="Toggle theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon h-5 w-5 transition-transform scale-100 rotate-90 dark:rotate-0 dark:scale-100">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg></button></div>
+                <div class="xl:hidden flex justify-center items-center"><button type="button" aria-haspopup="dialog"
+                        aria-expanded="false" aria-controls="radix-_R_d5ltb_" data-state="closed"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-menu size-8">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg></button></div>
+            </div>
+        </div>
+        <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
+            class="flex flex-1 items-center justify-start relative z-50 w-full">
+            <div style="position:relative">
+                <ul data-orientation="horizontal"
+                    class="group flex flex-1 list-none items-center justify-start overflow-x-auto space-x-1" dir="ltr">
+                    <li class="relative"><button id="radix-_R_9ltb_-trigger-radix-_R_5pltb_" data-state="closed"
+                            aria-expanded="false" aria-controls="radix-_R_9ltb_-content-radix-_R_5pltb_"
+                            class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:text-accent-foreground focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 group hover:bg-accent focus:bg-accent"
+                            data-radix-collection-item="">Start Learning<!-- --> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                                aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></button></li>
+                    <li class="relative"><button id="radix-_R_9ltb_-trigger-radix-_R_9pltb_" data-state="closed"
+                            aria-expanded="false" aria-controls="radix-_R_9ltb_-content-radix-_R_9pltb_"
+                            class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:text-accent-foreground focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 group hover:bg-accent focus:bg-accent"
+                            data-radix-collection-item="">Tutorials<!-- --> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
+                                aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg></button></li>
+                </ul>
+            </div>
+            <div class="absolute left-0 top-full flex justify-start w-full"></div>
+        </nav>
+    </header>
+    <div class="min-h-screen bg-background text-foreground mb-16 mx-8">
+        <div class="w-full my-2 md:my-2 md:mb-8"><a target="_blank" rel="noopener noreferrer"
+                class="flex justify-center items-center"
+                href=" {% static 'website/courses/the-ultimate-job-ready-data-science-course.html' %} "><img alt="Data Science Course Banner"
+                    loading="lazy" width="1200" height="300" decoding="async" data-nimg="1"
+                    class="hidden md:block w-full h-auto rounded-lg md:w-1/2" style="color:transparent"
+                    srcSe {% static 'website/t="/_n' %} ext/image?url= {% static 'website/%2Fads%2Fbanner.png&amp;w' %} =1200&amp;q=75 1x, /_next/image?url=%2Fads%2Fbanner.png&amp;w=3840&amp;q=75 2x"
+                    src=" {% static 'website/_next/banner71a9.webp?url= {% static 'website/%2Fads%2Fbanner.png&amp;w' %} =3840&amp;q=75' %} " /><img
+                    alt="Data Science Course Banner" loading="lazy" width="1200" height="300" decoding="async"
+                    data-nimg="1" class="block md:hidden w-full h-auto rounded-lg md:w-1/2" style="color:transparent"
+                    srcSe {% static 'website/t="/_n' %} ext/image?url= {% static 'website/%2Fads%2Fad1.png&amp;w' %} =1200&amp;q=75 1x, /_next/image?url=%2Fads%2Fad1.png&amp;w=3840&amp;q=75 2x"
+                    src=" {% static 'website/_next/ad1dfbd.png?url= {% static 'website/%2Fads%2Fad1.png&amp;w' %} =3840&amp;q=75' %} " /></a></div>
+        <h1 class="text-center text-4xl pt-0 pb-4 font-semibold text-foreground">Download Notes</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/python.webp' %} " alt="Python Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Python Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Python_Complete_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Python_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/c.webp' %} " alt="C Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">C Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/C_Complete_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/C_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/android.webp' %} " alt="Android Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Android Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Android_CompleteNotes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Android_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/java.webp' %} " alt="Java Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Java Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Java_Complete_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Java_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/html.webp' %} " alt="HTML Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">HTML Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/HTML_Complete_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/HTML_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/css.webp' %} " alt="CSS Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">CSS Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/CSS_Complete_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/CSS_ChapterWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/dsa.webp' %} " alt="DSA Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">DSA Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/DSA_CompleteNotes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/DSA_TopicWise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/js.webp' %} " alt="JavaScript Notes" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">JavaScript Notes</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Notes Here</p>
+                <div class="flex flex-wrap w-full justify-evenly mt-auto gap-2"><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.pdf"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">PDF
+                        Notes</a><a
+                        href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.zip"
+                        target="_blank" rel="noreferrer noopener"
+                        class="flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all">Chapterwise
+                        Notes</a></div>
+            </div>
+        </div>
+        <h1 class="text-center text-4xl pt-8 pb-4 font-semibold text-foreground">Download Cheatsheets</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/python.webp' %} " alt="Python Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Python Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/python-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/c.webp' %} " alt="C Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">C Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/c-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/cpp.webp' %} " alt="C++ Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">C++ Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/cpp-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/java.webp' %} " alt="Java Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Java Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/java-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/html.webp' %} " alt="HTML Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">HTML Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/html-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/css.webp' %} " alt="CSS Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">CSS Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/css-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/flask.webp' %} " alt="Flask Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Flask Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/flask-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/js.webp' %} " alt="JavaScript Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">JavaScript Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/javascript-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/php.webp' %} " alt="PHP Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">PHP Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/php-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/mysql.webp' %} " alt="MySQL Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">MySQL Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/mysql-cheatsheet.html' %} ">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/django.webp' %} " alt="Django Cheatsheet" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Django Cheatsheet</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Cheatsheet Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href=" {% static 'website/blogpost/django-cheatsheet.html' %} ">Download</a>
+            </div>
+        </div>
+        <h1 class="text-center text-4xl pt-8 pb-4 font-semibold text-foreground">Download Handbooks</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/python.webp' %} " alt="Python Handbook" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">Python Handbook</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Handbook Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate Python Handbook.pdf">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/c.webp' %} " alt="C Handbook" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">C Handbook</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Handbook Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate C Handbook.pdf">Download</a>
+            </div>
+            <div
+                class="flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border">
+                <img src=" {% static 'website/img/notes/html.webp' %} " alt="HTML Handbook" class="w-32 h-32 rounded-full mb-4" />
+                <h2 class="text-lg font-semibold text-primary mb-2">HTML Handbook</h2>
+                <p class="text-sm text-muted-foreground mb-4">Download Handbook Here</p><a target="_blank"
+                    rel="noreferrer noopener"
+                    class="flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all"
+                    href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate HTML handbook.pdf">Download</a>
+            </div>
+        </div>
+        <div class="w-full my-2 md:my-2 md:mb-8"><a target="_blank" rel="noopener noreferrer"
+                class="flex justify-center items-center"
+                href=" {% static 'website/courses/the-ultimate-job-ready-data-science-course.html' %} "><img alt="Data Science Course Banner"
+                    loading="lazy" width="1200" height="300" decoding="async" data-nimg="1"
+                    class="w-full h-auto rounded-lg md:w-1/2" style="color:transparent"
+                    srcSe {% static 'website/t="/_n' %} ext/image?url= {% static 'website/%2Fads%2Fad1.png&amp;w' %} =1200&amp;q=75 1x, /_next/image?url=%2Fads%2Fad1.png&amp;w=3840&amp;q=75 2x"
+                    src=" {% static 'website/_next/ad1dfbd.png?url= {% static 'website/%2Fads%2Fad1.png&amp;w' %} =3840&amp;q=75' %} " /></a></div>
+    </div><!--$--><!--/$-->
+    <footer
+        class="bg-gray-50 w-full ml-auto dark:bg-gray-900 py-8 px-4 md:px-8 lg:px-24 text-gray-800 dark:text-gray-300 border-t z-50 relative">
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 justify-between">
+            <div class="md:ml-8">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Main</h3>
+                <div class="flex flex-col space-y-2"><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/index.html' %} ">Home</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/contact.html' %} ">Contact</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/work.html' %} ">Work With Us</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/gear.html' %} ">My Gear</a></div>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Learn</h3>
+                <div class="flex flex-col space-y-2"><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/courses.html' %} ">Courses</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/tutorials.html' %} ">Tutorials</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/notes.html' %} ">Notes</a></div>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Legal</h3>
+                <div class="flex flex-col space-y-2"><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/terms.html' %} ">Terms</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/privacy.html' %} ">Privacy</a><a
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                        href=" {% static 'website/refund-policy.html' %} ">Refund</a></div>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Social</h3>
+                <div class="flex flex-col space-y-2"><a href="https://github.com/codewithharry" target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><img
+                            src=" {% static 'website/icons/github.svg' %} " alt="GitHub"
+                            class="w-5 h-5 text-gray-600 dark:text-gray-400 dark:invert" /><span>GitHub</span></a><a
+                        href="https://x.com/codewithharry" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><img
+                            src=" {% static 'website/icons/X.svg' %} " alt="Twitter"
+                            class="w-5 h-5 text-gray-600 dark:text-gray-400 dark:invert" /><span>Twitter
+                            (X)</span></a><a href="https://youtube.com/@codewithharry" target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><img
+                            src=" {% static 'website/icons/youtube.svg' %} " alt="YouTube"
+                            class="w-5 h-5 text-gray-600 dark:text-gray-400 dark:invert dark:grayscale" /><span>YouTube</span></a><a
+                        href="https://facebook.com/codewithharry" target="_blank" rel="noopener noreferrer"
+                        class="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><img
+                            src=" {% static 'website/icons/facebook.svg' %} " alt="YouTube"
+                            class="w-5 h-5 text-gray-600 dark:text-gray-400 dark:invert dark:grayscale" /><span>Facebook</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-sm text-gray-600 dark:text-gray-400">Made with ❤️ and ☕ in India</div>
+    </footer>
+    <script src=" {% static 'website/_next/static/chunks/webpack-1f8e0a8e3d9c8665.js' %} " id="_R_" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0])</script>
+    <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[57670,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"\"]\n3:I[84477,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"Toaster\"]\n4:I[58077,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"ThemeProvider\"]\n5:I[95552,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"default\"]\n"])</script>
+    <script>self.__next_f.push([1, "7:I[25874,[],\"\"]\n8:I[16832,[],\"\"]\nf:I[29194,[],\"\"]\n10:I[15735,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"default\"]\n11:I[29767,[\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"163\",\"static/chunks/app/(footerpages)/notes/page-ddb7f0d55a9055b5.js\"],\"\"]\n12:I[67552,[\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"163\",\"static/chunks/app/(footerpages)/notes/page-ddb7f0d55a9055b5.js\"],\"Image\"]\n20:I[77947,[],\"ViewportBoundary\"]\n22:I[77947,[],\"MetadataBoundary\"]\n23:\"$Sreact.suspense\"\n2b:I[77947,[],\"OutletBoundary\"]\n2d:I[70794,[],\"AsyncMetadataOutlet\"]\n2f:I[80642,[],\"IconMark\"]\n:HL[\"/_next/static/media/0484562807a97172-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/4473ecc91f70f139-s.p.woff\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff\"}]\n:HL[\"/_next/static/media/463dafcda517f24f-s.p.woff\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff\"}]\n:HL[\"/_next/static/media/4c285fdca692ea22-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6245472ced48d3be-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7108afb8b1381ad1-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/7db6c35d839a711c-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/8888a3826f4a3af4-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/9e82d62334b205f4-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/b957ea75a8"])</script>
+    <script>self.__next_f.push([1, "4b6ea7-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/eafabf029ad39a43-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/30e9f8676ad9dabe.css\",\"style\"]\n:HL[\"/_next/static/css/53eef233cdc30247.css\",\"style\"]\n"])</script>
+    <script>self.__next_f.push([1, "0:{\"P\":null,\"b\":\"yI8ab6nZqpKrGsYhU5gT1\",\"p\":\"\",\"c\":[\"\",\"notes\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"(footerpages)\",{\"children\":[\"notes\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\" {% static 'website/:\' %} "/_next/static/css/30e9f8676ad9dabe.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/53eef233cdc30247.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"shortcut icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\"}],[\"$\",\"$L2\",null,{\"id\":\"facebook-pixel\",\"strategy\":\"afterInteractive\",\"children\":\"\\n            !function(f,b,e,v,n,t,s)\\n            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\\n            n.callMethod.apply(n,arguments):n.queue.push(arguments)};\\n            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\\n            n.queue=[];t=b.createElement(e);t.async=!0;\\n            t.src=v {% static 'website/;s=b.getElementsByTagName(e)[0];\\n            s.parentNode.insertBefore(t,s)}(window, document,'script',\\n            '../connect.facebook.net/en_US/fbe' %} vents.js');\\n            fbq('init', '608037172208445');\\n            fbq('track', 'PageView');\\n          \"}],[\"$\",\"noscript\",null,{\"children\":[\"$\",\"img\",null,{\"height\":1,\"width\":1,\"style\":{\"display\":\"none\"},\"src\":\"https://www.facebook.com/tr?id=608037172208445\u0026ev=PageView\u0026noscript=1\",\"alt\":\"Facebook Pixel\"}]}]]}],[\"$\",\"body\",null,{\"className\":\"__variable_1e4310 __variable_c3aa02 __variable_9b9fd1 antialiased\",\"children\":[[\"$\",\"$L2\",null,{\"src\":\"https://www.googletagmanager.com/gtag/js?id=G-TLJ82JF418\",\"strategy\":\"afterInteractive\"}],[\"$\",\"$L2\",null,{\"id\":\"google-analytics\",\"strategy\":\"afterInteractive\",\"children\":\"\\n            window.dataLayer = window.dataLayer || [];\\n            function gtag(){dataLayer.push(arguments);}\\n            gtag('js', new Date());\\n            gtag('config', 'G-TLJ82JF418');\\n          \"}],[\"$\",\"$L2\",null,{\"src\":\"https://www.googletagmanager.com/gtag/js?id=AW-11344294909\",\"strategy\":\"afterInteractive\"}],[\"$\",\"$L2\",null,{\"id\":\"google-ads\",\"strategy\":\"afterInteractive\",\"children\":\"\\n            window.dataLayer = window.dataLayer || [];\\n            function gtag(){dataLayer.push(arguments);}\\n            gtag('js', new Date());\\n            gtag('config', 'AW-11344294909');\\n          \"}],[\"$\",\"$L2\",null,{\"id\":\"linkedin-insight\",\"strategy\":\"afterInteractive\",\"children\":\"\\n            _linkedin_partner_id = \\\"7447500\\\";\\n            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];\\n            window._linkedin_data_partner_ids.push(_linkedin_partner_id);\\n        \\n            (function(l) {\\n              if (!l) {\\n                window.lintrk = function(a, b) { window.lintrk.q.push([a, b]) };\\n                window.lintrk.q = [];\\n              }\\n              var s = document.getElementsByTagName(\\\"script\\\")[0];\\n              var b = document.createElement(\\\"script\\\");\\n              b.type = \\\"text/javascript\\\";\\n              b.async = true;\\n              b.src = \\\"../snap.licdn.com/li.lms-analytics/insight.min.js\\\";\\n              s.parentNode.insertBefore(b, s);\\n            })(window.lintrk);\\n          \"}],[\"$\",\"$L3\",null,{}],[\"$\",\"$L4\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[\"$\",\"$L5\",null,{\"children\":[\"$L6\",[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":\"$L9\"}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],\"$La\"]}]}]]}]]}]]}],{\"children\":[\"(footerpages)\",\"$Lb\",{\"children\":[\"notes\",\"$Lc\",{\"children\":[\"__PAGE__\",\"$Ld\",{},null,false]},null,false]},null,false]},null,false],\"$Le\",false]],\"m\":\"$undefined\",\"G\":[\"$f\",[]],\"s\":false,\"S\":false}\n"])</script>
+    <script>self.__next_f.push([1, "9:[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "a:[\"$\",\"$L10\",null,{}]\n"])</script>
+    <script>self.__next_f.push([1, "b:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$0:f:0:1:1:props:children:1:props:children:1:props:children:6:props:children:props:children:1:props:notFound:0:1:props:style\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$9:props:children:1:props:style\",\"children\":404}],[\"$\",\"div\",null,{\"style\":\"$9:props:children:2:props:style\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$9:props:children:2:props:children:props:style\",\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "c:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "d:[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"div\",null,{\"className\":\"min-h-screen bg-background text-foreground mb-16 mx-8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"w-full my-2 md:my-2 md:mb-8\",\"children\":[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "courses/the-ultimate-job-ready-data-science-course.html\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"flex justify-center items-center\",\"children\":[[\"$\",\"$L12\",null,{\"src\" {% static 'website/:\' %} "/ads/banner.png\",\"alt\":\"Data Science Course Banner\",\"width\":1200,\"height\":300,\"className\":\"hidden md:block w-full h-auto rounded-lg md:w-1/2\"}],[\"$\",\"$L12\",null,{\"src\":\"/ads/ad1.png\",\"alt\":\"Data Science Course Banner\",\"width\":1200,\"height\":300,\"className\":\"block md:hidden w-full h-auto rounded-lg md:w-1/2\"}]]}]}],[\"$\",\"h1\",null,{\"className\":\"text-center text-4xl pt-0 pb-4 font-semibold text-foreground\",\"children\":\"Download Notes\"}],[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/python.webp\",\"alt\":\"Python Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Python Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Python_Complete_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Python_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}],[\"$\",\"div\",\"1\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/c.webp\",\"alt\":\"C Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"C Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/C_Complete_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/C_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}],[\"$\",\"div\",\"2\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/android.webp\",\"alt\":\"Android Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Android Notes\"}],\"$L13\",\"$L14\"]}],\"$L15\",\"$L16\",\"$L17\",\"$L18\",\"$L19\"]}],\"$L1a\",\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\"]}],null,\"$L1f\"]}]\n"])</script>
+    <script>self.__next_f.push([1, "e:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L20\",null,{\"children\":\"$L21\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]],[\"$\",\"$L22\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$23\",null,{\"fallback\":null,\"children\":\"$L24\"}]}]}]]}]\n13:[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}]\n"])</script>
+    <script>self.__next_f.push([1, "14:[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Android_CompleteNotes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Android_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "15:[\"$\",\"div\",\"3\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/java.webp\",\"alt\":\"Java Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Java Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Java_Complete_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/Java_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "16:[\"$\",\"div\",\"4\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/html.webp\",\"alt\":\"HTML Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"HTML Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/HTML_Complete_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/HTML_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "17:[\"$\",\"div\",\"5\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/css.webp\",\"alt\":\"CSS Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"CSS Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/CSS_Complete_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/CSS_ChapterWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "18:[\"$\",\"div\",\"6\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/dsa.webp\",\"alt\":\"DSA Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"DSA Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/DSA_CompleteNotes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/DSA_TopicWise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "19:[\"$\",\"div\",\"7\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/js.webp\",\"alt\":\"JavaScript Notes\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"JavaScript Notes\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Notes Here\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap w-full justify-evenly mt-auto gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"PDF Notes\"}],[\"$\",\"a\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.zip\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold flex-1 text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Chapterwise Notes\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "1a:[\"$\",\"h1\",null,{\"className\":\"text-center text-4xl pt-8 pb-4 font-semibold text-foreground\",\"children\":\"Download Cheatsheets\"}]\n"])</script>
+    <script>self.__next_f.push([1, "1b:[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/python.webp\",\"alt\":\"Python Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Python Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/python-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"1\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/c.webp\",\"alt\":\"C Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"C Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\":\"/blogpost/c-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"2\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/cpp.webp\",\"alt\":\"C++ Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"C++ Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\":\"/blogpost/cpp-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"3\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/java.webp\",\"alt\":\"Java Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Java Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\":\"/blogpost/java-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"4\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/html.webp\",\"alt\":\"HTML Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"HTML Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\":\"/blogpost/html-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],\"$L25\",\"$L26\",\"$L27\",\"$L28\",\"$L29\",\"$L2a\"]}]\n"])</script>
+    <script>self.__next_f.push([1, "1c:[\"$\",\"h1\",null,{\"className\":\"text-center text-4xl pt-8 pb-4 font-semibold text-foreground\",\"children\":\"Download Handbooks\"}]\n"])</script>
+    <script>self.__next_f.push([1, "1d:[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4\",\"children\":[[\"$\",\"div\",\"0\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/python.webp\",\"alt\":\"Python Handbook\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Python Handbook\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Handbook Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate Python Handbook.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"1\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/c.webp\",\"alt\":\"C Handbook\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"C Handbook\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Handbook Here\"}],[\"$\",\"$L11\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate C Handbook.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}],[\"$\",\"div\",\"2\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/img/notes/html.webp\",\"alt\":\"HTML Handbook\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"HTML Handbook\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Handbook Here\"}],[\"$\",\"$L11\",null,{\"href\":\"https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/YouTube/The Ultimate HTML handbook.pdf\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "1e:[\"$\",\"div\",null,{\"className\":\"w-full my-2 md:my-2 md:mb-8\",\"children\":[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "courses/the-ultimate-job-ready-data-science-course.html\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"flex justify-center items-center\",\"children\":[\"$\",\"$L12\",null,{\"src\" {% static 'website/:\' %} "/ads/ad1.png\",\"alt\":\"Data Science Course Banner\",\"width\":1200,\"height\":300,\"className\":\"w-full h-auto rounded-lg md:w-1/2\"}]}]}]\n1f:[\"$\",\"$L2b\",null,{\"children\":[\"$L2c\",[\"$\",\"$L2d\",null,{\"promise\":\"$@2e\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "25:[\"$\",\"div\",\"5\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/css.webp\",\"alt\":\"CSS Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"CSS Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/css-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "26:[\"$\",\"div\",\"6\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/flask.webp\",\"alt\":\"Flask Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Flask Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/flask-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "27:[\"$\",\"div\",\"7\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/js.webp\",\"alt\":\"JavaScript Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"JavaScript Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/javascript-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "28:[\"$\",\"div\",\"8\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/php.webp\",\"alt\":\"PHP Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"PHP Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/php-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "29:[\"$\",\"div\",\"9\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/mysql.webp\",\"alt\":\"MySQL Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"MySQL Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/mysql-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "2a:[\"$\",\"div\",\"10\",{\"className\":\"flex flex-col items-center p-6 bg-card text-card-foreground rounded-lg shadow-lg border border-border\",\"children\":[[\"$\",\"img\",null,{\"src\" {% static 'website/:\' %} "/img/notes/django.webp\",\"alt\":\"Django Cheatsheet\",\"className\":\"w-32 h-32 rounded-full mb-4\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-primary mb-2\",\"children\":\"Django Cheatsheet\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground mb-4\",\"children\":\"Download Cheatsheet Here\"}],[\"$\",\"$L11\",null,{\"href\" {% static 'website/:\' %} "/blogpost/django-cheatsheet/\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex justify-center items-center font-semibold w-full text-center bg-secondary text-secondary-foreground hover:bg-secondary/90 px-4 py-2 rounded-md text-sm transition-all\",\"children\":\"Download\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "21:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n2c:null\n"])</script>
+    <script>self.__next_f.push([1, "2e:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Download Notes \u0026 Cheatsheets | CodeWithHarry\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Download free programming notes, cheatsheets, and handbooks for Python, Java, C, HTML, CSS, JavaScript and more to enhance your coding skills.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"programming notes, coding cheatsheets, programming handbooks, free coding resources, learn programming, Python notes, Java notes, HTML notes, CSS notes, JavaScript notes\"}],[\"$\",\"meta\",\"3\",{\"name\":\"creator\",\"content\":\"Harry\"}],[\"$\",\"meta\",\"4\",{\"name\":\"publisher\",\"content\":\"CodeWithHarry\"}],[\"$\",\"meta\",\"5\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"Download Notes \u0026 Cheatsheets | CodeWithHarry\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"Download free programming notes, cheatsheets, and handbooks for Python, Java, C, HTML, CSS, JavaScript and more to enhance your coding skills.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:title\",\"content\":\"CodeWithHarry - Learn Programming and Coding\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:description\",\"content\":\"Learn programming with easy-to-follow tutorials, courses, and resources. CodeWithHarry offers free content for beginners and advanced developers.\"}],[\"$\",\"link\",\"12\",{\"rel\":\"icon\",\"href\" {% static 'website/:\' %} "/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"$L2f\",\"13\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script>
+    <script>self.__next_f.push([1, "24:\"$2e:metadata\"\n"])</script>
+    <script>self.__next_f.push([1, "30:I[86910,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"default\"]\n31:I[10968,[\"3868\",\"static/chunks/3868-d32f28fdc463b233.js\",\"9767\",\"static/chunks/9767-84cd7b7a924ca45f.js\",\"1303\",\"static/chunks/1303-202330d7b8075350.js\",\"3263\",\"static/chunks/3263-11710914f9985149.js\",\"529\",\"static/chunks/529-2cffe6655b674629.js\",\"9881\",\"static/chunks/9881-7bd56b138ca162a8.js\",\"9671\",\"static/chunks/9671-352cbd3f13a06200.js\",\"7552\",\"static/chunks/7552-299c8347df13ec6b.js\",\"4604\",\"static/chunks/4604-e4d7c8c182986b80.js\",\"7177\",\"static/chunks/app/layout-09dda55155b40063.js\"],\"MyNavigationMenu\"]\n6:[\"$\",\"header\",null,{\"className\":\"bg-background text-foreground p-2 md:p-4 sticky top-0 z-20 border-b-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"md:mx-4 flex justify-between\",\"children\":[\"$\",\"$L30\",null,{\"session\":null}]}],[\"$\",\"$L31\",null,{}]]}]\n"])</script>
+</body>
+<!-- Mirrored from www.codewithharry.com/notes by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Aug 2025 07:08:04 GMT -->
+
+</html>

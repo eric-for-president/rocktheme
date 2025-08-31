@@ -1,0 +1,393 @@
+<!doctype html>
+ {% load static %} 
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Project Details - Elusion</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon.png and root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href=" {% static 'website/img/logo/favicon.ico' %} ">
+
+    <!-- All css here -->
+
+  <!-- bootstrap 5.0 css -->
+    <link rel="stylesheet" href=" {% static 'website/css/bootstrap.min.css' %} ">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href=" {% static 'website/css/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/slick-slider.css' %} ">
+    <!-- Animate css -->
+    <link rel="stylesheet" href=" {% static 'website/css/animate.min.css' %} ">
+    <!-- magnific css -->
+    <link rel="stylesheet" href=" {% static 'website/css/magnific-popup.css' %} ">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href=" {% static 'website/css/meanmenu.min.css' %} ">
+    <!-- venobox css -->
+    <link rel="stylesheet" href=" {% static 'website/css/venobox.css' %} ">
+    <!-- Icon font css -->
+    <link rel="stylesheet" href=" {% static 'website/css/font-awesome.min.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/themify-icons.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/flaticon.css' %} ">
+    <!-- style css -->
+    <link rel="stylesheet" href=" {% static 'website/css/style.css' %} ">
+    <!-- responsive css -->
+    <link rel="stylesheet" href=" {% static 'website/css/responsive.css' %} ">
+</head>
+
+
+<body>
+    <!-- preloader  -->
+    <div id="preloader"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Mouse Cursor -->
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span></span></div>
+    <!-- Start header -->
+    <header class="header-one">
+        <div id="sticker" class=" header-area">
+            <div class="container">
+                <div class="row header-center">
+                    <div class="col-xl-3 col-lg-3 col-md-4 d-flex align-items-center">
+                        <div class="header-logo">
+                            <a href=" {% static 'website/index.html' %} "><img src=" {% static 'website/img/logo/logo4.png' %} " alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-8">
+                        <div class="header-right">
+                            <!-- search option start -->
+                            <div class="search-inner">
+                                <form action="#">
+                                    <div class="search-option">
+                                        <input type="text" placeholder="Search...">
+                                        <button class="button" type="submit"><i class="ti-search"></i></button>
+                                    </div>
+                                    <a class="main-search" href="#"><i class="ti-search"></i></a>
+                                </form>
+                            </div>
+                            <!-- search option end -->
+                            <a href=" {% static 'website/contact.html' %} " class="hd-btn anti-btn"><i class="ti-comment"></i>Let's talk</a>
+                        </div>
+                        <div class="header_menu t-center">
+                            <nav id="mobile-menu">
+                                <ul class="main-menu">
+                                    <li class="menu-item-has-children"><a href="#">Home</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/index.html' %} ">Home 0ne</a></li>
+                                            <li><a href=" {% static 'website/index-2.html' %} ">Home Two</a></li>
+                                            <li><a href=" {% static 'website/index-3.html' %} ">Home Three</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/about.html' %} ">About</a></li>
+                                            <li><a href=" {% static 'website/services.html' %} ">Services</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Services Details</a></li>
+                                            <li><a href=" {% static 'website/team.html' %} ">Teams</a></li>
+                                            <li><a href=" {% static 'website/review.html' %} ">Reviews</a></li>
+                                            <li><a href=" {% static 'website/pricing.html' %} ">Pricing</a></li>
+                                            <li><a href=" {% static 'website/error.html' %} ">Error</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Projects</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/project.html' %} ">Projects</a></li>
+                                            <li><a href=" {% static 'website/project-details.html' %} ">Project Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/blog.html' %} ">Blog Grid</a></li>
+                                            <li><a href=" {% static 'website/blog-details.html' %} ">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="contact"><a href=" {% static 'website/contact.html' %} ">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+    <main>
+        <!-- Start Breadcrumb Area -->
+        <div class="page-area area-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 justify-content-start align-items-center">
+                        <div class="breadcrumb-title">
+                            <div class="white-headline">
+                                <h2>Project <span class="sp-color">Details</span></h2>
+                            </div>
+                        </div>
+                        <div class="breadcrumb-page">
+                           <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb ">
+                                    <li class="breadcrumb-item">
+                                       <a href=" {% static 'website/index.html' %} ">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Project Details</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumb Area -->
+        <!-- Start project Area -->
+        <div class="project-single bg-color area-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- End Column -->
+                    <div class="col-xl-8 col-lg-8 col-md-7">
+                        <div class="project-details">
+                            <h3>Product automation system development in factory</h3>
+                            <p>The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaning lessness </p>
+                            <div class="project-inner">
+                                <div class="project-single row">
+                                   <div class="col-xl-6 col-lg-6 col-md-12">
+                                        <div class="project-image">
+                                            <img src=" {% static 'website/img/project/p1.jpg' %} " alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12">
+                                        <div class="project-image">
+                                            <img src=" {% static 'website/img/project/p2.jpg' %} " alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12">
+                                        <div class="project-image">
+                                            <img src=" {% static 'website/img/project/p3.jpg' %} " alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12">
+                                        <div class="project-image">
+                                            <img src=" {% static 'website/img/project/p4.jpg' %} " alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaning lessness </p>
+                        </div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-5">
+                        <div class="right-projects">
+                            <div class="project-history">
+                                <div class="project-name">
+                                    <ul>
+                                        <li><i class="ti-user"></i>Client name :<span>Product Automation</span></li>
+                                        <li><i class="ti-pencil-alt"></i>Project category :<span> Artificial, Automation</span></li>
+                                        <li><i class="ti-timer"></i>Project Date :<span> 13 Mar 2023</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                           <!-- end single area -->
+                            <div class="single-page-head">
+                                <div class="new-project">
+                                    <div class="project-new">
+                                        <h4>Are you ready new project?</h4>
+                                        <a class="hire-btn anti-btn" href=" {% static 'website/contact.html' %} ">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single area -->
+                        </div>
+                        <!-- end single area -->
+                    </div>
+					<!-- End single page -->
+                </div>
+            </div>
+            <!-- End main content -->
+        </div>
+		<!-- End portfolio Area -->
+    </main>
+    <!-- Start Footer Area -->
+    <footer class="footer1">
+        <div class="footer-area">
+            <div class="container">
+               <div class="row brand-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="brand-content">
+                            <div class="brand-carousel owl-carousel">
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/2.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/3.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/4.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/5.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/6.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/7.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/8.png' %} " alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-center-inner">
+                    <div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="row footer-center">
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content logo-footer">
+                                    <div class="footer-head">
+                                        <div class="footer-logo">
+                                            <a href="#"><img src=" {% static 'website/img/logo/logo4.png' %} " alt=""></a>
+                                        </div>
+                                        <p>
+                                            When replacing a selection. help agencies to define their new business objectives and then create. maintains the amount of lines. When replacing a selection.
+                                        </p>
+                                        <div class="footer-icons">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content">
+                                    <div class="footer-head">
+                                        <h4>Services link</h4>
+                                        <ul class="footer-list">
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Robotick</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Factory </a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Automotion</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Chat GPT</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Artificial </a></li>
+                                        </ul>
+                                        <ul class="footer-list">
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Visualization</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Big Data</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Healtcare</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Research</a></li>
+                                            <li><a href=" {% static 'website/service-details.html' %} ">Security</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content last-content">
+                                    <div class="footer-head">
+                                        <h4>Contact Us</h4>
+                                        <div class="subs-feilds">
+                                            <div class="suscribe-input">
+                                                <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+                                                <button type="submit" id="sus_submit" class="anti-btn hd-btn subs-btn">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12"> 
+                        <div class="footer-area-bottom row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="copyright">
+                                    <p>
+                                        Copyright © 2023
+                                        <a href="#">Elusion</a> All rights reserved
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href=" {% static 'website/about.html' %} ">About</a></li>
+                                        <li><a href=" {% static 'website/contact.html' %} ">Terms & Condition</a></li>
+                                        <li><a href=" {% static 'website/contact.html' %} ">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom Area -->
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- All JS here -->
+
+    <!-- modernizr JS -->
+    <script src=" {% static 'website/js/vendor/modernizr-3.5.0.min.js' %} "></script>
+    <!-- jquery latest version -->
+    <script src=" {% static 'website/js/vendor/jquery-1.12.4.min.js' %} "></script>
+    <!-- Poper js -->
+    <script src=" {% static 'website/js/popper.min.js' %} "></script>
+    <!-- bootstrap js -->
+    <script src=" {% static 'website/js/bootstrap.min.js' %} "></script>
+    <!-- owl.carousel js -->
+    <script src=" {% static 'website/js/owl.carousel.min.js' %} "></script>
+    <script src=" {% static 'website/js/slick.min.js' %} "></script>
+    <!-- meanmenu js -->
+    <script src=" {% static 'website/js/jquery.meanmenu.js' %} "></script>
+    <!-- waypoint js -->
+    <script src=" {% static 'website/js/waypoints.js' %} "></script>
+    <!-- venobox js -->
+    <script src=" {% static 'website/js/venobox.min.js' %} "></script>
+    <!-- magnific js -->
+    <script src=" {% static 'website/js/magnific.min.js' %} "></script>
+    <!-- wow js -->
+    <script src=" {% static 'website/js/wow.min.js' %} "></script>
+    <!-- plugins js -->
+    <script src=" {% static 'website/js/plugins.js' %} "></script>
+    <!-- main js -->
+    <script src=" {% static 'website/js/main.js' %} "></script>
+</body>
+
+</html>

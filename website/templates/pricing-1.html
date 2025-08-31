@@ -1,0 +1,447 @@
+﻿<!doctype html>
+ {% load static %} 
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pricing - Elusion</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon.png and root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href=" {% static 'website/img/logo/favicon-1.ico' %} ">
+
+    <!-- All css here -->
+
+  <!-- bootstrap 5.0 css -->
+    <link rel="stylesheet" href=" {% static 'website/css/bootstrap.min-1.css' %} ">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href=" {% static 'website/css/owl.carousel.min-1.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/slick-slider-1.css' %} ">
+    <!-- Animate css -->
+    <link rel="stylesheet" href=" {% static 'website/css/animate.min-1.css' %} ">
+    <!-- magnific css -->
+    <link rel="stylesheet" href=" {% static 'website/css/magnific-popup-1.css' %} ">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href=" {% static 'website/css/meanmenu.min-1.css' %} ">
+    <!-- venobox css -->
+    <link rel="stylesheet" href=" {% static 'website/css/venobox-1.css' %} ">
+    <!-- Icon font css -->
+    <link rel="stylesheet" href=" {% static 'website/css/font-awesome.min-1.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/themify-icons-1.css' %} ">
+    <link rel="stylesheet" href=" {% static 'website/css/flaticon-1.css' %} ">
+    <!-- style css -->
+    <link rel="stylesheet" href=" {% static 'website/css/style-1.css' %} ">
+    <!-- responsive css -->
+    <link rel="stylesheet" href=" {% static 'website/css/responsive-1.css' %} ">
+</head>
+
+
+<body>
+    <!-- preloader  -->
+    <div id="preloader"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Mouse Cursor -->
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span></span></div>
+    <!-- Start header -->
+    <header class="header-one">
+        <div id="sticker" class=" header-area">
+            <div class="container">
+                <div class="row header-center">
+                    <div class="col-xl-3 col-lg-3 col-md-4 d-flex align-items-center">
+                        <div class="header-logo">
+                            <a href=" {% static 'website/index-1.html' %} "><img src=" {% static 'website/img/logo/logo4-1.png' %} " alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-8">
+                        <div class="header-right">
+                            <!-- search option start -->
+                            <div class="search-inner">
+                                <form action="#">
+                                    <div class="search-option">
+                                        <input type="text" placeholder="Search...">
+                                        <button class="button" type="submit"><i class="ti-search"></i></button>
+                                    </div>
+                                    <a class="main-search" href="#"><i class="ti-search"></i></a>
+                                </form>
+                            </div>
+                            <!-- search option end -->
+                            <a href=" {% static 'website/contact-1.html' %} " class="hd-btn anti-btn"><i class="ti-comment"></i>Let's talk</a>
+                        </div>
+                        <div class="header_menu t-center">
+                            <nav id="mobile-menu">
+                                <ul class="main-menu">
+                                    <li class="menu-item-has-children"><a href="#">Home</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/index-1.html' %} ">Home 0ne</a></li>
+                                            <li><a href=" {% static 'website/index-2-1.html' %} ">Home Two</a></li>
+                                            <li><a href=" {% static 'website/index-3-1.html' %} ">Home Three</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/about.html' %} ">About</a></li>
+                                            <li><a href=" {% static 'website/services.html' %} ">Services</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Services Details</a></li>
+                                            <li><a href=" {% static 'website/team-1.html' %} ">Teams</a></li>
+                                            <li><a href=" {% static 'website/review-1.html' %} ">Reviews</a></li>
+                                            <li><a href=" {% static 'website/pricing-1.html' %} ">Pricing</a></li>
+                                            <li><a href=" {% static 'website/error-1.html' %} ">Error</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Projects</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/project-1.html' %} ">Projects</a></li>
+                                            <li><a href=" {% static 'website/project-details-1.html' %} ">Project Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href=" {% static 'website/blog-1.html' %} ">Blog Grid</a></li>
+                                            <li><a href=" {% static 'website/blog-details-1.html' %} ">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="contact"><a href=" {% static 'website/contact-1.html' %} ">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+    <main>
+        <!-- Start Breadcrumb Area -->
+        <div class="page-area area-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 justify-content-start align-items-center">
+                        <div class="breadcrumb-title">
+                            <div class="white-headline">
+                                <h2>Our <span class="sp-color">Pricing</span></h2>
+                            </div>
+                        </div>
+                        <div class="breadcrumb-page">
+                           <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb ">
+                                    <li class="breadcrumb-item">
+                                       <a href=" {% static 'website/index-1.html' %} ">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Our Pricing</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumb Area -->
+        <!-- start pricing area -->
+        <div class="pricing-area bg-color fix area-padding-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-head-inner">
+                            <h2>Company software anual prices include tax and support details</h2>
+                            <p>The phrasal sequence of the Lorem Ipsum text is now so widespread and commonplace that many DTP programmes can generate dummy.</p>
+                            <div class="price-image">
+                                <img src=" {% static 'website/img/feature/price-1.png' %} " alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-12">
+                        <div class="table-list wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="tabil-list-warp table-number-one">
+                                <div class="top-price-inner align-items-center">
+                                    <h3>General</h3>
+                                    <div class="rates">
+                                        <span class="prices"><span class="dolar">$</span>Free</span><span class="users">Any Time</span>
+                                    </div>
+                                    <div class="price-btn-inner">
+                                        <a class="price-btn" href=" {% static 'website/contact-1.html' %} ">Register</a>
+                                    </div>
+                                </div>
+                                <div class="work-list">
+                                    <ol class="one-work-line">
+                                        <li class="check">Accessing</li>
+                                        <li class="check">AI Writer</li>
+                                        <li class="check">Create Image</li>
+                                    </ol>
+                                    <ol class="two-work-line">
+                                        <li class="check">Marketing</li>
+                                        <li class="check">Send Mail</li>
+                                        <li class="check cross">Online support</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list active-table wow fadeInUp" data-wow-delay="0.6s">
+                            <span class="base">Top Rated</span>
+                            <div class="tabil-list-warp table-number-two">
+                                <div class="top-price-inner">
+                                    <h3>General</h3>
+                                    <div class="rates">
+                                        <span class="prices"><span class="dolar">$</span>80</span><span class="users">Per Month</span>
+                                    </div>
+                                    <div class="price-btn-inner">
+                                        <a class="price-btn" href=" {% static 'website/contact-1.html' %} ">Buy now</a>
+                                    </div>
+                                </div>
+                                <div class="work-list">
+                                    <ol class="one-work-line">
+                                        <li class="check">Accessing</li>
+                                        <li class="check">AI Writer</li>
+                                        <li class="check">Create Image</li>
+                                    </ol>
+                                    <ol class="two-work-line">
+                                        <li class="check">Marketing</li>
+                                        <li class="check">Send Mail</li>
+                                        <li class="check cross">Online support</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="tabil-list-warp table-number-three">
+                                <div class="top-price-inner">
+                                    <h3>Standard</h3>
+                                    <div class="rates">
+                                        <span class="prices"><span class="dolar">$</span>200</span><span class="users">Per Month</span>
+                                    </div>
+                                    <div class="price-btn-inner">
+                                        <a class="price-btn" href=" {% static 'website/contact-1.html' %} ">Buy now</a>
+                                    </div>
+                                </div>
+                                <div class="work-list">
+                                    <ol class="one-work-line">
+                                        <li class="check">Accessing</li>
+                                        <li class="check">AI Writer</li>
+                                        <li class="check">Create Image</li>
+                                    </ol>
+                                    <ol class="two-work-line">
+                                        <li class="check">Marketing</li>
+                                        <li class="check">Send Mail</li>
+                                        <li class="check cross">Online support</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-list active-table wow fadeInUp" data-wow-delay="0.10s">
+                            <div class="tabil-list-warp table-number-four">
+                                <div class="top-price-inner">
+                                    <h3>Premium</h3>
+                                    <div class="rates">
+                                        <span class="prices"><span class="dolar">$</span>500</span><span class="users">Per Year</span>
+                                    </div>
+                                    <div class="price-btn-inner">
+                                        <a class="price-btn" href=" {% static 'website/contact-1.html' %} ">Buy now</a>
+                                    </div>
+                                </div>
+                                <div class="work-list">
+                                    <ol class="one-work-line">
+                                        <li class="check">Accessing</li>
+                                        <li class="check">AI Writer</li>
+                                        <li class="check">Create Image</li>
+                                    </ol>
+                                    <ol class="two-work-line">
+                                        <li class="check">Marketing</li>
+                                        <li class="check">Send Mail</li>
+                                        <li class="check">Online support</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End pricing area -->
+    </main>
+    <!-- Start Footer Area -->
+    <footer class="footer1">
+        <div class="footer-area">
+            <div class="container">
+               <div class="row brand-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="brand-content">
+                            <div class="brand-carousel owl-carousel">
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/1-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/2-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/3-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/4-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/5-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/6-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/7-1.png' %} " alt=""></a>
+                                </div>
+                                <div class="single-brand-item">
+                                    <a href="#"><img src=" {% static 'website/img/brand/8-1.png' %} " alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-center-inner">
+                    <div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="row footer-center">
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content logo-footer">
+                                    <div class="footer-head">
+                                        <div class="footer-logo">
+                                            <a href="#"><img src=" {% static 'website/img/logo/logo4-1.png' %} " alt=""></a>
+                                        </div>
+                                        <p>
+                                            When replacing a selection. help agencies to define their new business objectives and then create. maintains the amount of lines. When replacing a selection.
+                                        </p>
+                                        <div class="footer-icons">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content">
+                                    <div class="footer-head">
+                                        <h4>Services link</h4>
+                                        <ul class="footer-list">
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Robotick</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Factory </a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Automotion</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Chat GPT</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Artificial </a></li>
+                                        </ul>
+                                        <ul class="footer-list">
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Visualization</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Big Data</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Healtcare</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Research</a></li>
+                                            <li><a href=" {% static 'website/service-details-1.html' %} ">Security</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="footer-content last-content">
+                                    <div class="footer-head">
+                                        <h4>Contact Us</h4>
+                                        <div class="subs-feilds">
+                                            <div class="suscribe-input">
+                                                <textarea id="message" rows="7" placeholder="Massage" class="form-control" required="" data-error="Write your message"></textarea>
+                                                <button type="submit" id="sus_submit" class="anti-btn hd-btn subs-btn">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12"> 
+                        <div class="footer-area-bottom row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="copyright">
+                                    <p>
+                                        Copyright © 2023
+                                        <a href="#">Elusion</a> All rights reserved
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href=" {% static 'website/about.html' %} ">About</a></li>
+                                        <li><a href=" {% static 'website/contact-1.html' %} ">Terms & Condition</a></li>
+                                        <li><a href=" {% static 'website/contact-1.html' %} ">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom Area -->
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- All JS here -->
+
+    <!-- modernizr JS -->
+    <script src=" {% static 'website/js/vendor/modernizr-3.5.0.min-1.js' %} "></script>
+    <!-- jquery latest version -->
+    <script src=" {% static 'website/js/vendor/jquery-1.12.4.min-1.js' %} "></script>
+    <!-- Poper js -->
+    <script src=" {% static 'website/js/popper.min-1.js' %} "></script>
+    <!-- bootstrap js -->
+    <script src=" {% static 'website/js/bootstrap.min-1.js' %} "></script>
+    <!-- owl.carousel js -->
+    <script src=" {% static 'website/js/owl.carousel.min-1.js' %} "></script>
+    <script src=" {% static 'website/js/slick.min-1.js' %} "></script>
+    <!-- meanmenu js -->
+    <script src=" {% static 'website/js/jquery.meanmenu-1.js' %} "></script>
+    <!-- waypoint js -->
+    <script src=" {% static 'website/js/waypoints-1.js' %} "></script>
+    <!-- venobox js -->
+    <script src=" {% static 'website/js/venobox.min-1.js' %} "></script>
+    <!-- magnific js -->
+    <script src=" {% static 'website/js/magnific.min-1.js' %} "></script>
+    <!-- wow js -->
+    <script src=" {% static 'website/js/wow.min-1.js' %} "></script>
+    <!-- plugins js -->
+    <script src=" {% static 'website/js/plugins-1.js' %} "></script>
+    <!-- main js -->
+    <script src=" {% static 'website/js/main-1.js' %} "></script>
+</body>
+
+</html>
